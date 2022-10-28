@@ -12,7 +12,7 @@
 <!-- clone repo -->
 - Clone this repo
 ```bash
-git clone https://
+git clone https://github.com/Pupmos/juno-pixels-bot.git
 ```
 <!-- insert image into images folder -->
 - Insert your image into the `images` folder
