@@ -43,3 +43,8 @@ IMAGE="./images/your-image.jpg"
 SQUARE_X=0
 SQUARE_Y=1
 ```
+
+- run script 
+```bash
+cargo run
+```
