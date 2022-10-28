@@ -1,0 +1,15 @@
+chain_cfg:
+  denom: "ujuno"
+  prefix: "juno"
+  chain_id: "juno-1"
+  rpc_endpoint: "https://juno-rpc.polkachu.com:443"
+  grpc_endpoint: "http://juno-grpc.polkachu.com:12690"
+  gas_prices: 0.01
+  gas_adjustment: 1.5
+
+# optional list of pre-stored code_ids:
+contract_deploy_info:
+  cw20_base:
+    code_id: 1
+  cw4_group:
+    code_id: 2

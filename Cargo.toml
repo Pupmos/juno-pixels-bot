@@ -1,0 +1,19 @@
+[package]
+name = "nopixel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cosm-orc = { git = 'https://github.com/Pupmos/cosm-orc', branch = 'timeout-height-patch' }
+juno-pixel = { git = 'https://github.com/Callum-A/juno-pixel', default-features = false }
+image = '0.24.4'
+palette = '0.6.1'
+ocular = { version = "1.0.0-alpha" }
+dotenv = '0.15.0'
+
+# [dependencies.palette]
+# version = "0.6.1"
+# default-features = false
+# features = ["libm"] # Uses libm instead of std for floating point math

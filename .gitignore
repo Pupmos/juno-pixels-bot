@@ -1,0 +1,6 @@
+/target
+.env
+draft.jpg
+images/*.png
+images/*.jpg
+.DS_Store
