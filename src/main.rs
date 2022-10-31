@@ -41,8 +41,13 @@ fn main() {
         im = im.resize(max_width, height, image::imageops::FilterType::Nearest);
     }
 
-    let chunk_x: u64 = std::env::var("SQUARE_X").unwrap().parse::<u64>().unwrap();
-    let chunk_y: u64 = std::env::var("SQUARE_Y").unwrap().parse::<u64>().unwrap();
+    let chunk_x: u64 = std::env::var("SQUARE_X").unwrap().parse().unwrap();
+    let chunk_y: u64 = std::env::var("SQUARE_Y").unwrap().parse().unwrap();
+    let cooldown_seconds: u64 = std::env::var("COOLDOWN")
+        .unwrap_or("0".to_string())
+        .parse()
+        .unwrap();
+
     // palette srgb color object from rgb: 255, 255, 255
     let white = palette::rgb::Srgb::from_components((255_u8, 255_u8, 255_u8));
     // rgb(228, 228, 228)
@@ -174,7 +179,7 @@ fn main() {
                 if did_draw {
                     has_drawn = true;
                     // ensures two juno blocks have occured, enough time for the cooldown to complete
-                    std::thread::sleep(std::time::Duration::from_secs(13));
+                    std::thread::sleep(std::time::Duration::from_secs(cooldown_seconds));
                 } else if has_drawn {
                     std::thread::sleep(std::time::Duration::from_secs(2));
                 }

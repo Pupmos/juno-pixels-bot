@@ -43,3 +43,12 @@ IMAGE="./images/your-image.jpg"
 SQUARE_X=0
 SQUARE_Y=1
 ```
+
+<!-- add cooldown to env file -->
+- Add `COOLDOWN` to the `.env` file (OPTIONAL)
+  - the cooldown is in seconds.
+    - default is `0`
+    - at time of writing, cooldown duration is zero. this may change in the future
+```bash
+COOLDOWN=10
+```
