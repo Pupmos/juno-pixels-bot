@@ -12,7 +12,7 @@
 <!-- clone repo -->
 - Clone this repo
 ```bash
-git clone https://
+git clone https://github.com/Pupmos/juno-pixels-bot.git
 ```
 <!-- insert image into images folder -->
 - Insert your image into the `images` folder
@@ -51,4 +51,9 @@ SQUARE_Y=1
     - at time of writing, cooldown duration is zero. this may change in the future
 ```bash
 COOLDOWN=10
+```
+
+- run script 
+```bash
+cargo run
 ```
